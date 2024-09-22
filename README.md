@@ -13,7 +13,7 @@ bundle add
 Or install it manually by running:
 
 ```
-gem install
+gem install losar
 ```
 
 ## Usage
@@ -24,14 +24,14 @@ Once the gem is installed, you can use the command-line tool. Here are the avail
    To print the traditional "Tashi Delek" greeting:
 
 ```
- --tashidelek
+ losar --tashidelek
 ```
 
 2. Learn the History of Blessed Rainy Day
    To learn more about the history of Bhutan's Blessed Rainy Day:
 
 ```
- --history
+ losar --history
 ```
 
 This will print a brief description of the festival and its significance in Bhutan.
@@ -40,7 +40,7 @@ This will print a brief description of the festival and its significance in Bhut
    To print the traditional food and drink served during the celebrations:
 
 ```
- --chang
+ losar --chang
 ```
 
 This will print: "Ja zhi, thukpa dru, chang tsheymey" – referring to the four types of tea, six varieties of soup, and special homemade alcoholic drinks.
@@ -52,7 +52,7 @@ After checking out the repo, run bin/setup to install dependencies. Then, run ra
 To install this gem onto your local machine, run:
 
 ```
-bundle exec rake install
+bundle exec rake install losar
 ```
 
 This will create a git tag for the version, push git commits and the tag, and push the .gem file to rubygems.org.
