@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "optparse"
+require_relative "../lib/losar"
+
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: losar [command]"
+
+  opts.on("--tashidelek", "Why not?") do
+    options[:tashidelek] = true
+  end
+
+  opts.on("--history", "Why celebrate?") do
+    options[:history] = true
+  end
+
+  opts.on("--chang", "Why drink?") do
+    options[:chang] = true
+  end
+end.parse!
+
+if options[:tashidelek]
+  Losar.tashidelek
+elsif options[:history]
+  Losar.history
+elsif options[:chang]
+  Losar.chang
+else
+  puts "Unknown command. Available commands: --tashidelek, --history, --chang"
+end
